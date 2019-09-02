@@ -16,7 +16,7 @@ interface MoveActionParams {
   targetIndex: number;
 }
 
-export default class BtFavoritesTree extends Component {
+export default class BtPageFavorites extends Component {
   @service('favorites')
   favorites: Favorites;
 

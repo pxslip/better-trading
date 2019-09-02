@@ -1,7 +1,11 @@
 pods:
   components:
-    bt-favorites-tree:
-      folder:
-        new_folder:  New folder
-        new_trade:  Save current trade
-        untitled: Untitled folder
+    bt-page:
+      favorites:
+        folder:
+          new_folder:  New folder
+          new_trade:  Save current trade
+          untitled: Untitled folder
+  main:
+    history: History
+    favorites: Favorites

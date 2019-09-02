@@ -7,7 +7,7 @@ import {inject as service} from '@ember/service';
 import TradeLocation from 'better-trading/services/trade-location';
 import {FavoritesTrade} from 'better-trading/types/favorites';
 
-export default class BtFavoritesTreeTrade extends Component {
+export default class BtPageFavoritesTrade extends Component {
   @service('trade-location')
   tradeLocation: TradeLocation;
 

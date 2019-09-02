@@ -34,13 +34,13 @@
     as |item index|
   >
     {{#if item.slug}}
-      <BtFavoritesTree::Trade
+      <BtPage::Favorites::Trade
         @trade={{item}}
         @onUpdate={{action this.persist}}
         @onDelete={{action this.deleteAt index}}
       />
     {{else}}
-      <BtFavoritesTree::Folder
+      <BtPage::Favorites::Folder
         @folder={{item}}
         @onUpdate={{action this.persist}}
         @onMove={{action this.move}}

@@ -1,0 +1,13 @@
+.toolbar {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.toolbar-button {
+  @include blue-button();
+  flex: 1 1 0;
+
+  &:not(:first-child) {
+    border-left: 0;
+  }
+}

@@ -9,7 +9,7 @@ import SearchPanel from 'better-trading/services/search-panel';
 import TradeLocation from 'better-trading/services/trade-location';
 import {FavoritesFolder} from 'better-trading/types/favorites';
 
-export default class BtFavoritesTreeFolder extends Component {
+export default class BtPageFavoritesFolder extends Component {
   @service('trade-location')
   tradeLocation: TradeLocation;
 

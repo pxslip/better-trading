@@ -1,0 +1,27 @@
+<div local-class="toolbar">
+  <button
+    type="button"
+    local-class="toolbar-button"
+    {{action this.navigateTo "history"}}
+  >
+    <FaIcon @icon="history"/>
+    {{t "pods.main.history"}}
+  </button>
+
+  <button
+    type="button"
+    local-class="toolbar-button"
+    {{action this.navigateTo "favorites"}}
+  >
+    <FaIcon @icon="star"/>
+    {{t "pods.main.favorites"}}
+  </button>
+</div>
+
+<LiquidBind
+  @value={{this.currentMode}}
+  @use="crossFade"
+  as |currentMode|
+>
+  {{component (main-mode-component currentMode)}}
+</LiquidBind>
